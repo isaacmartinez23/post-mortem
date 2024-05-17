@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post Mortem</title>
+
+  <!--- Favicon-->
+  <link rel="shortcut icon" href="./assets/img/logo_2.png" type="image/x-icon">
+
+  <!--- Custom css link-->
+  <link rel="stylesheet" href="./assets/css/style-prefix.css">
+
+  <!-- Google font link-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="overlay" data-overlay></div>
+  
+  <!-- HEADER-->  
+    <div class="header-top">
+      <div class="container">
+        <ul class="header-social-container">
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>          
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-tiktok"></ion-icon>
+            </a>
+          </li>
+        </ul>
+
+        <div class="header-alert-news">
+          <p>
+            <b>3x2 en toda la tienda, por tiempo limitado.</b>            
+          </p>
+        </div>
+
+        <div class="header-top-actions">
+
+          <select name="currency">            
+            <option value="peso">MX &dollar;</option>
+          </select>
+
+          <select name="language">            
+            <option value="es-ES">Espa&ntilde;ol</option>            
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-main">
+      <div class="container">
+
+        <a href="#" class="header-logo">
+          <img src="./assets/img/logo.png" alt="Post-Mortem logo" width="190" height="36">
+        </a>
+
+        <div class="header-search-container">
+          <input type="search" name="search" class="search-field" placeholder="Enter your product name...">
+          <button class="search-btn">
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+        </div>
+
+        <div class="header-user-actions">
+
+          <button class="action-btn">
+            <ion-icon name="person-outline"></ion-icon>
+          </button>
+
+          <button class="action-btn">
+            <ion-icon name="heart-outline"></ion-icon>
+            <span class="count">0</span>
+          </button>
+
+          <button class="action-btn">
+            <ion-icon name="bag-handle-outline"></ion-icon>
+            <span class="count">0</span>
+          </button>
+
+        </div>
+      </div>
+    </div>
+
+<!-- Nav-->
+
+    <nav class="desktop-navigation-menu">
+      <div class="container">
+
+        <ul class="desktop-menu-category-list">
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Home</a>          
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Descuentos</a>          
+          </li>                        
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Shop</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">Lo mas vendido</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">T-shirts</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Hoodies</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Sombreros</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Colecciones</a>  
+            
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">MINIMAL</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">OLIMPO</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">HUSTLE</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">GYMRAT</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Guia de talla</a>            
+          </li>          
+      </div>
+
+    </nav>      
+
+<!-- MAIN-->
+
+  <main>
+
+<!-- BANNER-->
+
+    <div class="banner">
+      <div class="container">
+        <div class="slider-container has-scrollbar">
+          <div class="slider-item">
+            <img src="./assets/img/portada.png" alt="fashion sale" class="banner-img">            
+          </div>                              
+        </div>
+      </div>
+    </div>
+
+<!-- PRODUCT -->
+
+    <div class="product-container">
+      <div class="container">                               
+          
+      <!-- PRODUCT GRID -->
+
+          <div class="product-main">
+            <h1 class="title">Best Sellers</h1>               
+            <div class="product-grid">
+
+              <div class="showcase">
+                <div class="showcase-banner">
+                  <img src="./assets/img/playera1.png" alt="Mens Winter Leathers Jackets" width="300" class="product-img default">
+                  <img src="./assets/img/playera1.png" alt="Mens Winter Leathers Jackets" width="300" class="product-img hover">
+
+                  <p class="showcase-badge"></p>
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>                    
+                  </div>
+                </div>
+
+                <div class="showcase-content">
+                  <a href="producto.html" class="showcase-category">A los Muertos</a>                  
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>                                  
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">$299.00</p>                    
+                  </div>
+                </div>
+              </div>
+              <div class="showcase">
+                <div class="showcase-banner">
+                  <img src="./assets/img/playera2.png" alt="Mens Winter Leathers Jackets" width="300" class="product-img default">
+                  <img src="./assets/img/playera2.png" alt="Mens Winter Leathers Jackets" width="300" class="product-img hover">
+
+                  <p class="showcase-badge"></p>
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>                    
+                  </div>
+                </div>
+
+                <div class="showcase-content">
+                  <a href="producto.html" class="showcase-category">Memento Mori</a>                  
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>                                  
+                    <ion-icon name="star"></ion-icon>    
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">$299.00</p>                    
+                  </div>
+                </div>
+              </div>
+              <div class="showcase">
+                <div class="showcase-banner">
+                  <img src="./assets/img/playera3.png" alt="Mens Winter Leathers Jackets" width="300" class="product-img default">
+                  <img src="./assets/img/playera3.png" alt="Mens Winter Leathers Jackets" width="300" class="product-img hover">
+
+                  <p class="showcase-badge"></p>
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>                    
+                  </div>
+                </div>
+
+                <div class="showcase-content">
+                  <a href="producto.html" class="showcase-category">Zeus - Full Back</a>                  
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>                                  
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">$669.00</p>                    
+                  </div>
+                </div>
+              </div>
+              <div class="showcase">
+                <div class="showcase-banner">
+                  <img src="./assets/img/playera4.png" alt="Mens Winter Leathers Jackets" width="300" class="product-img default">
+                  <img src="./assets/img/playera4.png" alt="Mens Winter Leathers Jackets" width="300" class="product-img hover">
+
+                  <p class="showcase-badge"></p>
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>                    
+                  </div>
+                </div>
+
+                <div class="showcase-content">
+                  <a href="producto.html" class="showcase-category">Gods</a>                  
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>                                  
+                    <ion-icon name="star"></ion-icon>    
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">$349.00</p>                    
+                  </div>
+                </div>
+              </div>
+
+              
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- Promesa -->
+<div class="product-main">
+  <h2 class="title">La Promesa de Post Mortem</h2>
+  <div class="container">
+       <br>    
+      <p>✔ 100% Algodom premium</p> <br>
+      <p>✔ Tacto extra suave para tu piel</p> <br>
+      <p>✔ Resistencia +80 lavadas</p> <br>
+      <p>✔ Diseños únicos, con calidad de imagen superior</p> <br>
+      <p>✔ Corte Oversize / Regular Fit</p> <br>
+  </div>
+</div>
+<br>
+<br>
+<br>
+
+    <div class="banner">
+      <div class="container">
+        <div class="slider-container has-scrollbar">
+          <div class="slider-item">
+            <img src="./assets/img/banner.png" alt="fashion sale" class="banner-img">            
+          </div>                              
+        </div>
+      </div>
+    </div>
+
+    <div class="product-container">
+      <div class="container"> 
+        <div class="product-main">
+          <h2 class="title">Sombreros Clasicos</h2>               
+          <div class="product-grid">
+
+            <div class="showcase">
+              <div class="showcase-banner">
+                <img src="./assets/img/sombrero1b.png" alt="Mens Winter Leathers Jackets" width="300" class="product-img default">
+                <img src="./assets/img/sombrero1b.png" alt="Mens Winter Leathers Jackets" width="300" class="product-img hover">              
+                <div class="showcase-actions">
+                  <button class="btn-action">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>                    
+                </div>
+              </div>
+
+              <div class="showcase-content">
+                <a href="#" class="showcase-category">Sombrero Negro</a>                  
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>                                  
+                  <ion-icon name="star-outline"></ion-icon>
+                </div>
+
+                <div class="price-box">
+                  <p class="price">$649.00</p>                  
+                </div>
+              </div>
+            </div>
+            <div class="showcase">
+              <div class="showcase-banner">
+                <img src="./assets/img/sombrero2b.png" alt="Mens Winter Leathers Jackets" width="300" class="product-img default">
+                <img src="./assets/img/sombrero2b.png" alt="Mens Winter Leathers Jackets" width="300" class="product-img hover">              
+                <div class="showcase-actions">
+                  <button class="btn-action">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>                    
+                </div>
+              </div>
+
+              <div class="showcase-content">
+                <a href="#" class="showcase-category">Sombrero Huichol Negro</a>                  
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>                                                        
+                </div>
+
+                <div class="price-box">
+                  <p class="price">$749.00</p>                  
+                </div>
+              </div>
+            </div>
+            <div class="showcase">
+              <div class="showcase-banner">
+                <img src="./assets/img/sombrero3b.png" alt="Mens Winter Leathers Jackets" width="300" class="product-img default">
+                <img src="./assets/img/sombrero3b.png" alt="Mens Winter Leathers Jackets" width="300" class="product-img hover">              
+                <div class="showcase-actions">
+                  <button class="btn-action">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>                    
+                </div>
+              </div>
+
+              <div class="showcase-content">
+                <a href="#" class="showcase-category">Sombrero Tabaco</a>                  
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>                                  
+                  <ion-icon name="star-outline"></ion-icon>
+                </div>
+
+                <div class="price-box">
+                  <p class="price">$649.00</p>                  
+                </div>
+              </div>
+            </div>
+            <div class="showcase">
+              <div class="showcase-banner">
+                <img src="./assets/img/sombrero4b.png" alt="Mens Winter Leathers Jackets" width="300" class="product-img default">
+                <img src="./assets/img/sombrero4b.png" alt="Mens Winter Leathers Jackets" width="300" class="product-img hover">              
+                <div class="showcase-actions">
+                  <button class="btn-action">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>                    
+                </div>
+              </div>
+
+              <div class="showcase-content">
+                <a href="#" class="showcase-category">Sombrero Huichol Tabaco</a>                  
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>                                  
+                  <ion-icon name="star"></ion-icon>                      
+                </div>
+
+                <div class="price-box">
+                  <p class="price">$749.00</p>                  
+                </div>
+              </div>
+            </div>
+
+
+        </div>    
+      </div>
+    </div> 
+  </div>
+
+  <div class="banner">
+    <div class="container">
+      <div class="slider-container has-scrollbar">
+        <div class="slider-item">
+          <img src="./assets/img/banner2.png" alt="fashion sale" class="banner-img">            
+        </div>                              
+      </div>
+    </div>
+  </div>
+
+    <!-- TESTIMONIALS, CTA & SERVICE-->
+
+    <div>
+      <div class="container">
+        <div class="testimonials-box">
+
+          <!-- TESTIMONIALS-->
+
+          <div class="testimonial">
+            <h2 class="title">testimonios</h2>
+            <div class="testimonial-card">
+              <img src="./assets/img/logo_2.png" alt="alan doe" class="testimonial-banner" width="80" height="80">
+              <p class="testimonial-name">Alan Doe</p>
+              <p class="testimonial-title">Muy buena Calidad</p>              
+              <p class="testimonial-desc">
+                La calidad de los materiales es muy buena la playera está increíble y el corte excelente
+              </p>
+            </div>
+          </div>
+
+
+
+          <!-- CTA-->
+
+          <div class="cta-container">
+            <img src="./assets/img/banner3.png" alt="summer collection" class="cta-banner">
+            <a href="#" class="cta-content">
+              <p class="discount">25% Descueto</p>
+              <h2 class="cta-title">Nuestra Colección</h2>
+              <p class="cta-text">Starting $299</p>
+              <button class="cta-btn">Compra Ahora</button>
+            </a>
+          </div>
+
+          <!-- SERVICE-->
+
+          <div class="service">
+            <h2 class="title">Valores</h2>
+            <div class="service-container">
+              <a href="#" class="service-item">
+                <div class="service-icon">
+                  <ion-icon name="speedometer-outline"></ion-icon>
+                </div>
+                <div class="service-content">
+                  <h3 class="service-title">Envíos rapidos</h3>
+                  <p class="service-desc"></p>
+                </div>
+              </a>
+              <a href="#" class="service-item">
+              
+                <div class="service-icon">
+                  <ion-icon name="shield-checkmark-outline"></ion-icon>
+                </div>
+              
+                <div class="service-content">              
+                  <h3 class="service-title">Información Protegida</h3>
+                  <p class="service-desc"></p>              
+                </div>            
+              </a>
+
+              <a href="#" class="service-item">              
+                <div class="service-icon">
+                  <ion-icon name="thumbs-up-outline"></ion-icon>
+                </div>              
+                <div class="service-content">              
+                  <h3 class="service-title">  Garantía de Satisfacción</h3>
+                  <p class="service-desc"></p>              
+                </div>              
+              </a>
+
+              <a href="#" class="service-item">              
+                <div class="service-icon">
+                  <ion-icon name="checkmark-circle-outline"></ion-icon>
+                </div>              
+                <div class="service-content">              
+                  <h3 class="service-title">Tacto extra suave</h3>
+                  <p class="service-desc"></p>              
+                </div>              
+              </a>              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>    
+
+  </main>
+
+  <!-- Chat Bot -->
+<div id="chatbot-container" class="chatbot-container" style="display: none;">
+  <div class="chatbot-header">
+      Mortem AI
+      <button id="close-btn" class="close-btn">X</button>
+  </div>
+  <div id="chatbot-messages" class="chatbot-messages">
+      <!-- Mensaje de bienvenida -->
+      <div class="message bot-message">
+          ¡Hola! Soy Mortem AI, ¿en qué puedo ayudarte?
+      </div>
+  </div>
+  <div class="chatbot-input">
+      <input type="text" id="user-input" placeholder="Escribe un mensaje...">
+      <button id="send-btn">Enviar</button>
+  </div>
+</div>
+
+<div id="chatbot-circle" class="chatbot-circle">
+  <img src="assets/img/logo_2.png" alt="ChatBot">
+</div>
+
+
+
+
+
+  <!-- FOOTER -->
+
+  <footer>    
+    <div class="footer-nav">
+      <div class="container">
+        <ul class="footer-nav-list">
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Sobre Nosotros</h2>                        
+          </li> 
+          <li class="footer-nav-item flex">
+            <div class="icon-box">              
+            </div>
+            <a href="#" class="footer-nav-link">¿Tienes alguna duda? Contáctanos a través de nuestro Instagram o WhatsApp, con todo gusto te atenderemos</a>
+          </li>         
+        </ul>  
+        
+        <ul class="footer-nav-list">
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Redes Sociales</h2>            
+          </li>          
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </div>
+            <a href="#" class="footer-nav-link">Facebook</a>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </div>
+            <a href="#" class="footer-nav-link">Instagram</a>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="logo-tiktok"></ion-icon>
+            </div>
+            <a href="#" class="footer-nav-link">Tik Tok</a>
+          </li>
+
+        </ul>   
+
+        <ul class="footer-nav-list">
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Contact</h2>
+          </li>
+          
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="call-outline"></ion-icon>
+            </div>
+
+            <a href="tel:+607936-8058" class="footer-nav-link">5528565328</a>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <a href="mailto:example@gmail.com" class="footer-nav-link">contacto.pmortem@gmail.com</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Follow Us</h2>
+          </li>          
+        </ul>
+
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <img src="./assets/images/payment.png" alt="payment method" class="payment-img">
+        <p class="copyright">
+          Copyright &copy; <a href="#">Post Mortem 2024</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
