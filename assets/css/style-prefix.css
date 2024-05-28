@@ -1807,6 +1807,124 @@ footer {
   .product-grid { -ms-grid-columns: (1fr)[4]; grid-template-columns: repeat(4, 1fr); }
 
 
+  /* Estilos básicos para móviles (por defecto) */
+body {
+  font-size: var(--fs-5);
+}
+
+.container {
+  padding: 0 15px;
+}
+
+/* Estilos para tablets (pantallas de al menos 768px) */
+@media (min-width: 768px) {
+  .header-main {
+    padding: 150px 0;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contenedor-producto {
+    flex-direction: row;
+  }
+
+  .info-producto {
+    padding: 25px;
+    width: 50%;
+  }
+
+  .info-producto img {
+    width: 20%;
+  }
+}
+
+/* Estilos para desktops (pantallas de al menos 1024px) */
+@media (min-width: 1024px) {
+  .header-main {
+    padding: 100px 0;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .contenedor-producto {
+    flex-direction: row;
+  }
+
+  .info-producto {
+    padding: 25px;
+    width: 50%;
+  }
+
+  .info-producto img {
+    width: 15%;
+  }
+}
+
+/* Flexbox para centrar elementos vertical y horizontalmente */
+.container-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.contenedor-producto {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #000;
+}
+
+.contenedor-producto img {
+  width: 100%;
+}
+
+.info-producto {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Grid para la disposición de productos */
+.product-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+}
+
+@media (min-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Ajuste del tamaño de imágenes */
+.contenedor-producto img {
+  width: 100%;
+  height: auto;
+}
+
+.info-producto img {
+  width: 100%;
+  max-width: 150px;
+  margin: 20px auto 0;
+  display: block;
+}
+
+
+
+
 
   /**
    * #TESTIMONIALS, CTA, SERVICE
