@@ -369,6 +369,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 .submenu-title:hover { color: var(--davys-gray); }
 
 .submenu-category-list {
+  display: none;
   max-height: 0;
   overflow: hidden;
   visibility: hidden;
@@ -376,6 +377,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 }
 
 .submenu-category-list.active {
+  display: block;
   max-height: 148px;
   visibility: visible;
 }
@@ -1483,13 +1485,6 @@ footer {
   text-align: center;
 }
 
-.payment-img {
-  max-width: 335px;
-  width: 100%;
-  margin: auto;
-  margin-bottom: 15px;
-}
-
 .copyright {
   color: var(--sonic-silver);
   font-size: var(--fs-8);
@@ -2252,9 +2247,7 @@ footer {
     width: calc(20% - 16px);
   }
 
-  .footer-nav-list:last-child { display: none; }
-
-  .footer-bottom { margin-bottom: 0; }
+  .footer-nav-list:last-child { display: none; }  
 
 }
 
