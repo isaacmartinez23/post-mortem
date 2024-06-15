@@ -747,7 +747,24 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 
 
 
+/*-----------------------------------*\
+  #imagenes
+\*-----------------------------------*/
+.image-container {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center;     /* Centra verticalmente */
+  margin: 20px auto;       /* Margen superior e inferior de 20px, auto para centrar horizontalmente */
+  width: 80%;              /* Ajusta el ancho según tus necesidades */
+  height: auto;            /* Ajusta la altura según tus necesidades */
+  max-width: 500px;        /* Asegura que el contenedor no sea más ancho de 500px */
+  text-align: center;      /* Centra el texto dentro del contenedor */
+}
 
+.image-container img {
+  max-width: 100%;   /* Asegúrate de que la imagen no exceda el ancho del contenedor */
+  height: auto;      /* Mantén la proporción de la imagen */
+}
 
 
 
@@ -1289,15 +1306,7 @@ footer {
 
   .header-social-container,
   .header-top-actions { display: none; }
-
-  .header-alert-news {
-    color: var(--sonic-silver);
-    font-size: var(--fs-9);
-    text-transform: uppercase;
-  }
-
-  .header-alert-news b { font-weight: var(--weight-500); }
-
+  
   .header-main { padding: 25px 0; } 
   
   .mobile-bottom-navigation {
